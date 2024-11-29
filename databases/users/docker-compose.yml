@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:15  # Use the desired PostgreSQL version
+    container_name: postgres_db_users
+    restart: always
+    environment:
+      POSTGRES_USER: ${USERS_DB_USER}
+      POSTGRES_PASSWORD: ${USERS_DB_PASSWORD}  # Replace with your database password
+      POSTGRES_DB: ${USERS_DB_NAME}  # Replace with your database name
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data_users:/var/lib/postgresql/data  # Persistent storage
+      - ./init-scripts:/docker-entrypoint-initdb.d  # Directory for initialization scripts
+
+volumes:
+  postgres_data_users:
+    driver: local
