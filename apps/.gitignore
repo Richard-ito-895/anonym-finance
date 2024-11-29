@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules/
+apps/*/node_modules/
+libs/*/node_modules/
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# OS generated files
+.DS_Store
+Thumbs.db
+# Environment variables
+.env
+.env.*.local
+# Package lock files (optional, if you're not committing lock files)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+# Editor config files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
