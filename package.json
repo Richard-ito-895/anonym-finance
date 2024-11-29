@@ -1,0 +1,11 @@
+{
+  "name": "anonym-finance",
+  "version": "1.0.0",
+  "description": "Personal Finance application with guaranteed anonymous information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Jaramillo",
+  "license": "ISC"
+}
