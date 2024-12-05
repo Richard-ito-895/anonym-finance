@@ -28,3 +28,4 @@ pnpm-lock.yaml
 *.sublime-workspace
 # Build generated files
 **/dist/
+apps/api/db/*.d.ts
