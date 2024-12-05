@@ -8,7 +8,7 @@ services:
       POSTGRES_PASSWORD: ${USERS_DB_PASSWORD}  # Replace with your database password
       POSTGRES_DB: ${USERS_DB_NAME}  # Replace with your database name
     ports:
-      - "5432:5432"
+      - ${USERS_DB_PORT}:${USERS_DB_PORT}
     volumes:
       - postgres_data_users:/var/lib/postgresql/data  # Persistent storage
       - ./init-scripts:/docker-entrypoint-initdb.d  # Directory for initialization scripts
